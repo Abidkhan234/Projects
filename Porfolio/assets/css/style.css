@@ -1,0 +1,234 @@
+/* Font-family */
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Poppins:wght@400;500;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+/* font-family */
+
+* {
+    font-family: "Poppins", serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --bg-color: #1f242d;
+    --second-bg-color: #323946;
+    --main-color: #7cf03d;
+    --white-color: #fff;
+    --disable-color: #fff3;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    color: var(--white-color);
+}
+
+section {
+    background-color: var(--bg-color);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    padding: 10rem 9% 2rem;
+    visibility: hidden;
+    opacity: 0;
+    overflow: hidden;
+}
+
+section.active{
+    visibility: visible;
+    opacity: 1;
+    overflow: auto;
+}
+
+/* header start */
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 2rem 9%;
+    width: 100%;
+    background-color: var(--bg-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 3rem;
+    color: var(--white-color);
+    font-weight: 700;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+
+nav a {
+    font-size: 2rem;
+    font-weight: 500;
+    color: var(--white-color);
+    text-decoration: none;
+    margin-left: 3.5rem;
+    transition: all 0.3s;
+}
+
+nav a:hover,
+nav a.active {
+    color: var(--main-color);
+}
+
+#menu-icon {
+    font-size: 4rem;
+    display: none;
+}
+
+/* header end */
+
+/* home-section start */
+
+.home {
+    display: flex;
+    align-items: center;
+    gap: 5rem;
+}
+
+.home-detail h1 {
+    font-size: clamp(3.5rem, 10vw, 5.5rem);
+}
+
+.home-detail h2 {
+    display: inline-block;
+    font-size: 3.2rem;
+    margin-top: 1rem;
+}
+
+.home-detail h2 .auto-type{
+    color: var(--main-color);
+}
+
+.home-detail p {
+    font-size: 1.6rem;
+    margin: 1rem 0 2.5rem;
+}
+
+.home-detail .btn-sci {
+    display: flex;
+    align-items: center;
+}
+
+.home-detail .btn-sci .btn {
+    display: inline-block;
+    font-size: 1.6rem;
+    padding: 1rem 3rem;
+    background-color: var(--main-color);
+    border: 0.2rem solid var(--main-color);
+    border-radius: 4rem;
+    box-shadow: 0 0 0.5rem var(--main-color);
+    color: var(--bg-color);
+    font-weight: 500;
+    transition: all 0.5s;
+}
+
+.home-detail .btn-sci .btn:hover {
+    background: transparent;
+    color: var(--main-color);
+    box-shadow: none;
+}
+
+.home-detail .btn-sci .sci {
+    margin-left: 2rem;
+}
+
+.home-detail .btn-sci .sci a {
+    color: var(--white-color);
+    text-decoration: none;
+    display: inline-flex;
+    padding: 0.8rem;
+    border: 0.2rem solid var(--main-color);
+    margin: 0 0.8rem;
+    font-size: 2rem;
+    border-radius: 50%;
+    color: var(--main-color);
+    transition: all 0.5s;
+}
+
+.home-detail .btn-sci .sci a:hover {
+    color: var(--bg-color);
+    background: var(--main-color);
+    box-shadow: 0 0 0.5rem var(--main-color);
+}
+
+.home-img {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.home-img .img-box {
+    width: 32vw;
+    height: 32vw;
+    border-radius: 50%;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+}
+
+.home-img .img-box::before,
+.home-img .img-box::after {
+    content: "";
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    background: conic-gradient(transparent, transparent, transparent, var(--main-color));
+    transform: rotate(0deg);
+    animation: rotate-border 10s linear infinite;
+}
+
+.home-img .img-box::after {
+    animation-delay: -5s;
+}
+
+@keyframes rotate-border {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.home-img .img-box .img-item {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background-color: var(--bg-color);
+    border: 0.1px solid var(--bg-color);
+    display: flex;
+    z-index: 1;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.home-img .img-box .img-item img {
+    position: absolute;
+    top: 3rem;
+    display: block;
+    width: 85%;
+    object-fit: cover;
+    mix-blend-mode: lighten;
+}
+
+/* home-section end */
+
+
+/* services-secton start */
+
+
+
+
+
+/* services-secton end */
+
