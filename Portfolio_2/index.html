@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio_2</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+        integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="./assets/Css/style.css">
+
+</head>
+
+<body>
+
+    <!-- nav-bar start -->
+    <header>
+        <nav class="position-fixed top-0">
+            <div class="container-fluid overflow-hidden">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="nav-content d-flex justify-content-between align-items-center w-100">
+                            <div class="logo d-flex align-items-center">
+                                <img src="./assets/images/logo 1.png" alt="...">
+                                <h5>Personal</h5>
+                            </div>
+
+                            <div class="menu">
+                                <ul class="d-flex list-unstyled">
+                                    <li><a href="#about" class="active">About Me</a></li>
+                                    <li><a href="#skill">Skills</a></li>
+                                    <li><a href="#project">Projects</a></li>
+                                    <li><a href="#contact">Contact Me</a></li>
+                                </ul>
+                            </div>
+
+                            <div class="side-menu position-fixed top-0" id="side-menu">
+                                <ul class="d-flex flex-column list-unstyled m-0 gap-5">
+                                    <i class="fas fa-x ms-sm-2 mt-sm-2" onclick="closeSideBar()"></i>
+                                    <li><a href="#about">About Me</a></li>
+                                    <li><a href="#skill">Skills</a></li>
+                                    <li><a href="#project">Projects</a></li>
+                                    <li><a href="#contact">Contact Me</a></li>
+                                    <div class="nav-button d-block">
+                                        <button>Resume <img src="./assets/images/download.png" alt="..."></button>
+                                    </div>
+                                </ul>
+                            </div>
+
+                            <div class="nav-button">
+                                <button>Resume <img src="./assets/images/download.png" alt="..."></button>
+                            </div>
+                            <i class="fas fa-bars" onclick="sideBarShow()"></i>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </nav>
+    </header>
+
+    <!-- nav-bar end -->
+
+    <!-- hero-section start -->
+
+    <section class="hero-section">
+        <div class="container-fluid overflow-hidden ">
+            <div class="row">
+                <div class="col-lg-6 col-  p-0">
+                    <div class="hero-detail p-mb-2">
+                        <h2>Hello I'am <span>Abid Khan</span></h2>
+                        <h3>Frontend <span>Developer</span></h3>
+                        <p>
+                            Motivated Frontend Developer skilled in HTML, CSS, and JavaScript, passionate about
+                            building
+                            responsive and user-friendly websites. Eager to contribute and grow with a dynamic team.
+                        </p>
+                        <div class="hero-icons d-flex gap-lg-5 gap-3 flex-wrap">
+                            <a href="#"><i class="fab fa-linkedin"></i></a>
+                            <a href="#"><i class="fab fa-github"></i></a>
+                            <a href="#"><i class="fab fa-facebook"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-5 p-0">
+                    <div class="hero-image">
+                        <img src="./assets/images/Banner.png" alt="...">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- hero-section end -->
+
+    <!-- skill-section start -->
+
+    <section class="skill-section" id="skill">
+        <div class="container-fluid overflow-hidden">
+            <div class="row">
+                <div class="col-12 mb-5">
+                    <div class="heading">
+                        <h2>My <span>Skills</span></h2>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="skill-content">
+                        <div class="box">
+                            <i class="fab fa-html5"></i>
+                            <h5>HTML</h5>
+                        </div>
+                        <div class="box">
+                            <i class="fab fa-css3-alt"></i>
+                            <h5>CSS</h5>
+                        </div>
+                        <div class="box">
+                            <img src="./assets/images/icon-javscript.png" alt="">
+                            <h5>JavaScript</h5>
+                        </div>
+                        <div class="box">
+                            <i class="fab fa-bootstrap"></i>
+                            <h5>Bootstrap</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- skill-section end -->
+
+    <!-- top-btn start -->
+
+    <div class="top-btn">
+        <a href="#"><i class="fas fa-up-long"></i></a>
+    </div>
+
+
+    <!-- top-btn end -->
+
+    <!-- about-section start -->
+
+    <section class="about-section" id="about">
+        <div class="container-fluid overflow-hidden">
+            <div class="row">
+                <div class="col-12">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="about-sec-image">
+                                <img src="./assets/images/about-section-image.png" alt="...">
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="about-detail">
+                                <h2>About <span>Me</span></h2>
+                                <p>
+                                    I’m Abid Shah Khan, a frontend developer with 4 months of experience in building
+                                    modern websites using HTML, CSS, and JavaScript. I am dedicated to creating
+                                    responsive, user-friendly designs that provide a smooth browsing experience. My
+                                    recent projects focus on replicating popular websites to hone my skills and
+                                    expand
+                                    my portfolio. <br>
+
+                                    In addition to technical expertise, I have a strong interest in learning new
+                                    frameworks and tools that will help me stay at the forefront of frontend
+                                    development. I’m always eager to take on new challenges and contribute to
+                                    projects
+                                    that allow me to grow as a developer.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- about-section end -->
+
+    <!-- porject-section start -->
+
+    <section class="project-section my-4" id="project">
+        <div class="container-fluid overflow-hidden">
+            <div class="row m-0">
+                <div class="col-12 mb-5">
+                    <div class="heading">
+                        <h2>My <span>Projects</span></h2>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="project-1-image">
+                                <img src="./assets/images/project-1-image.PNG" alt="">
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="project-1-detail text-white">
+                                <h2 class="mb-3 font-monospace mt-4">01</h2>
+                                <h3 class="mb-3 fw-bolder">Coffee Shop</h3>
+                                <p class="fs-6 mb-2">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deserunt
+                                    officiis dolores ratione enim magnam maxime tempore quas dolor explicabo. Laboriosam
+                                    suscipit iusto ea doloremque similique aperiam velit accusamus facilis facere?</p>
+                                <a href="#" class="text-white"><i
+                                        class="fa-solid fa-arrow-up-right-from-square fs-5"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row flex-row-reverse">
+                        <div class="col-lg-6">
+                            <div class="project-1-image">
+                                <img src="./assets/images/project-2-image.PNG" alt="">
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="project-1-detail text-white">
+                                <h2 class="mb-3 font-monospace mt-4">02</h2>
+                                <h3 class="mb-3 fw-bolder">Social Scoop</h3>
+                                <p class="fs-6 mb-2">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deserunt
+                                    officiis dolores ratione enim magnam maxime tempore quas dolor explicabo. Laboriosam
+                                    suscipit iusto ea doloremque similique aperiam velit accusamus facilis facere?</p>
+                                <a href="#" class="text-white"><i
+                                        class="fa-solid fa-arrow-up-right-from-square fs-5"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row m-0">
+                        <div class="col-lg-6">
+                            <div class="project-1-image">
+                                <img src="./assets/images/project-3-image.PNG" alt="">
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="project-1-detail text-white">
+                                <h2 class="mb-3 font-monospace mt-4">03</h2>
+                                <h3 class="mb-3 fw-bolder">Hackaton</h3>
+                                <p class="fs-6 mb-2">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deserunt
+                                    officiis dolores ratione enim magnam maxime tempore quas dolor explicabo. Laboriosam
+                                    suscipit iusto ea doloremque similique aperiam velit accusamus facilis facere?</p>
+                                <a href="#" class="text-white"><i
+                                        class="fa-solid fa-arrow-up-right-from-square fs-5"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- porject-section end -->
+
+    <!-- contact-section start -->
+
+    <section class="contact-section" id="contact">
+        <div class="container-fluid overflow-hidden">
+            <div class="row">
+                <div class="col-12 mb-5">
+                    <div class="heading">
+                        <h2>Contact <span>Me</span></h2>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="contact-form ps-3 d-flex flex-column">
+                                <input type="text" placeholder="Your name">
+                                <input type="email" placeholder="Emial">
+                                <input type="text" placeholder="Your website (if exits)">
+                                <textarea id="message" placeholder="How can I help?*" rows="5"></textarea>
+                                <div
+                                    class="contact-link d-flex justify-content-between align-items-center mt-4 flex-wrap">
+                                    <div class="contact-btn">
+                                        <button>get in touch</button>
+                                    </div>
+                                    <div class="contact-icon">
+                                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                                        <a href="#"><i class="fab fa-github"></i></a>
+                                        <a href="#"><i class="fab fa-facebook"></i></a>
+                                        <a href="#"><i class="fab fa-instagram"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="contact-info pe-3 ps-3 d-flex h-100 justify-content-center flex-column gap-2">
+                                <h2>Let’s <span>talk</span> for</h2>
+                                <h2>Somethig special</h2>
+                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora mollitia aut
+                                    distinctio suscipit, id dolores enim odit consequatur illum, ex assumenda nisi
+                                    ratione quo ut. Esse deleniti ad aperiam id?</p>
+                                <p><strong>Abidkhan@gmail.com</strong></p>
+                                <p><strong>03122333</strong></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- contact-section end -->
+
+    <footer>
+        <div class="container-fluid overflow-hidden">
+            <div class="row">
+                <div class="col-12">
+                    <div class="footer-content">
+                        <div class="footer-img">
+                            <img src="./assets/images/footer-logo.png" alt="">
+                        </div>
+                        <div class="footer-info">
+                            <p class="text-white m-0">@2024</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+
+<script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+<script src="./assets/js/app.js"></script>
+
+</html>
