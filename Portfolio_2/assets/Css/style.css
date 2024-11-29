@@ -39,11 +39,6 @@ header {
     }
 }
 
-::-webkit-scrollbar {
-    width: 12px; /* For vertical scrollbar */
-    height: 12px; /* For horizontal scrollbar */
-}
-
 /* Track (background of the scrollbar) */
 ::-webkit-scrollbar-track {
     background: #f4f4f4; /* Light gray */
@@ -51,8 +46,7 @@ header {
 
 /* Thumb (draggable part of the scrollbar) */
 ::-webkit-scrollbar-thumb {
-    background: #888; /* Dark gray */
-    border-radius: 2px; /* Rounded corners */
+    background: #888; /* Dark gray */ /* Rounded corners */
 }
 
 /* Thumb on hover */
@@ -377,6 +371,8 @@ nav {
     .box {
         width: 160px;
         height: 160px;
+        background-color: var(--bg-main);
+        color: var(--bg-main);
     }
 }
 
