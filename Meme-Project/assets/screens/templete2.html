@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Second-templete</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: sans-serif;
+        }
+
+        .templete-container {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            padding: 20px;
+        }
+
+        .templete-image {
+            padding: 20px;
+            position: relative;
+            width: 45%;
+            max-width: 500px;
+            flex: 1;
+        }
+
+        .templete-image img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        #caption-top {
+            position: absolute;
+            color: white;
+            width: 100%;
+            height: auto;
+            align-content: center;
+            text-align: center;
+            font-size: 22px;
+            overflow: auto;
+            top: 10%;
+            left: 0;
+        }
+
+        .templete-captions-container {
+            width: 45%;
+            max-width: 400px;
+            flex: 1;
+            text-align: center;
+        }
+
+        .templete-captions-container .templete-captions {
+            width: 100%;
+            height: auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .templete-captions .input-field {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            text-align: left;
+        }
+
+        .templete-captions .input-field input {
+            flex: 1;
+            outline: none;
+            border: none;
+            border: 1px solid black;
+            padding: 10px;
+            font-size: 17px;
+        }
+
+        .templete-captions button {
+            padding: 5px 30px;
+            border: none;
+            outline: none;
+            cursor: pointer;
+            border: 1px solid black;
+            border-radius: 5px;
+            font-size: 17px;
+            font-weight: 500;
+        }
+
+        @media (max-width: 1024px) {
+            .templete-container {
+                flex-direction: row;
+                padding: 10px;
+            }
+
+            .templete-image {
+                width: 50%;
+            }
+
+            .templete-captions-container {
+                width: 50%;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .templete-container {
+                flex-direction: column;
+            }
+
+            .templete-image,
+            .templete-captions-container {
+                width: 100%;
+                max-width: none;
+            }
+
+            #caption-top {
+                font-size: 18px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .templete-image img {
+                border-radius: 5px;
+            }
+
+            .templete-captions .input-field input {
+                font-size: 15px;
+                padding: 8px;
+            }
+
+            .templete-captions button {
+                padding: 5px 20px;
+                font-size: 15px;
+            }
+
+            #caption-top {
+                font-size: 16px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="templete-container">
+        <div class="templete-image">
+            <img src="../images/image-2-second-phase.jpg" alt="">
+            <h2 id="caption-top"></h2>
+        </div>
+        <div class="templete-captions-container">
+            <div class="templete-captions">
+
+                <div class="input-field">
+                    <label for="top-text">Top-text</label>
+                    <input type="text" id="top-text">
+                </div>
+
+                <button onclick="enterText()">Enter</button>
+                <button onclick="clearText()">Clear</button>
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+    var captionTop = document.getElementById("caption-top");
+
+    var inputTop = document.getElementById("top-text");
+
+    var enterText = () => {
+        captionTop.innerHTML += " " + inputTop.value;
+        inputTop.value = "";
+    }
+
+    var clearText = () => {
+        captionTop.innerHTML = "";
+    }
+</script>
+
+</html>

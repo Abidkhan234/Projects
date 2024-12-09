@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Third-templete</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: sans-serif;
+        }
+
+        .templete-container {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            padding: 20px;
+        }
+
+        .templete-image {
+            width: 100%;
+            max-width: 500px;
+            height: auto;
+            margin: 20px auto;
+            position: relative;
+        }
+
+        .templete-image img {
+            width: 100%;
+            height: auto;
+        }
+
+        #caption-top {
+            position: absolute;
+            color: white;
+            width: 100%;
+            height: 10%;
+            align-content: center;
+            text-align: center;
+            font-size: 22px;
+            overflow: auto;
+            top: 0;
+            left: 0;
+        }
+
+        .templete-captions-container {
+            width: 100%;
+            max-width: 500px;
+            height: auto;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .templete-captions-container .templete-captions {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .templete-captions .input-field {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            text-align: left;
+        }
+
+        .templete-captions .input-field input {
+            flex: 1;
+            outline: none;
+            border: 1px solid black;
+            padding: 10px;
+            font-size: 17px;
+        }
+
+        .templete-captions button {
+            padding: 5px 30px;
+            border: 1px solid black;
+            border-radius: 5px;
+            font-size: 17px;
+            font-weight: 500;
+            cursor: pointer;
+        }
+
+        #caption-dragon-1,
+        #caption-dragon-2,
+        #caption-dragon-3 {
+            position: absolute;
+            width: 20%;
+            text-align: center;
+            align-content: center;
+            height: 10%;
+            font-size: 22px;
+            color: white;
+            top: 65%;
+        }
+
+        #caption-dragon-1 {
+            left: 3%;
+        }
+
+        #caption-dragon-2 {
+            left: 40%;
+        }
+
+        #caption-dragon-3 {
+            left: 74%;
+        }
+
+        @media (max-width: 1024px) {
+            .templete-container {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .templete-captions-container {
+                width: 100%;
+                padding: 10px;
+            }
+
+            .templete-image {
+                max-width: 400px;
+            }
+
+            #caption-top {
+                font-size: 20px;
+            }
+
+            #caption-dragon-1,
+            #caption-dragon-2,
+            #caption-dragon-3 {
+                font-size: 20px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .templete-image {
+                max-width: 300px;
+            }
+
+            .templete-captions-container {
+                width: 100%;
+            }
+
+            #caption-top {
+                font-size: 18px;
+            }
+
+            #caption-dragon-1,
+            #caption-dragon-2,
+            #caption-dragon-3 {
+                font-size: 18px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .templete-image {
+                max-width: 250px;
+            }
+
+            .templete-captions-container {
+                width: 100%;
+            }
+
+            .templete-captions .input-field input {
+                font-size: 15px;
+            }
+
+            .templete-captions button {
+                font-size: 15px;
+            }
+
+            #caption-top {
+                font-size: 16px;
+            }
+
+            #caption-dragon-1,
+            #caption-dragon-2,
+            #caption-dragon-3 {
+                font-size: 16px;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="templete-container">
+        <div class="templete-image">
+            <img src="../images/image-3-second-phase.jpg" alt="">
+            <h2 id="caption-top"></h2>
+            <h2 id="caption-dragon-1"></h2>
+            <h2 id="caption-dragon-2"></h2>
+            <h2 id="caption-dragon-3"></h2>
+        </div>
+        <div class="templete-captions-container">
+            <div class="templete-captions">
+
+                <div class="input-field">
+                    <label for="top-text">Top-text</label>
+                    <input type="text" id="top-text">
+                </div>
+                <div class="input-field">
+                    <label for="first-dragon">First-Dragon</label>
+                    <input type="text" id="first-dragon">
+                </div>
+                <div class="input-field">
+                    <label for="second-dragon">Second-Dragon</label>
+                    <input type="text" id="second-dragon">
+                </div>
+                <div class="input-field">
+                    <label for="third-dragon">Third-Dragon</label>
+                    <input type="text" id="third-dragon">
+                </div>
+
+                <button onclick="enterText()">Enter</button>
+                <button onclick="clearText()">Clear</button>
+            </div>
+        </div>
+    </div>
+
+</body>
+<script>
+    var captionTop = document.getElementById("caption-top");
+
+    var captionDragonFirst = document.getElementById("caption-dragon-1");
+
+    var captionDragonSecond = document.getElementById("caption-dragon-2");
+
+    var captionDragonThird = document.getElementById("caption-dragon-3");
+
+    var inputTop = document.getElementById("top-text");
+
+    var firstDragonInput = document.getElementById("first-dragon");
+
+    var secondDragonInput = document.getElementById("second-dragon");
+
+    var thirdDragonInput = document.getElementById("third-dragon");
+
+    var enterText = () => {
+        captionTop.innerHTML += " " + inputTop.value;
+        captionDragonFirst.innerHTML += "" + firstDragonInput.value;
+        captionDragonSecond.innerHTML += "" + secondDragonInput.value;
+        captionDragonThird.innerHTML += "" + thirdDragonInput.value;
+        inputTop.value = "";
+        firstDragonInput.value = "";
+        secondDragonInput.value = "";
+        thirdDragonInput.value = "";
+    }
+
+    var clearText = () => {
+        captionTop.innerHTML = "";
+        captionDragonFirst.innerHTML = "";
+        captionDragonSecond.innerHTML = "";
+        captionDragonThird.innerHTML = "";
+    }
+</script>
+
+</html>
