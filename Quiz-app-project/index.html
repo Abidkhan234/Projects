@@ -45,10 +45,10 @@
             </div>
 
             <div class="quiz-options">
-                <button class="ans"></button>
-                <button class="ans"></button>
-                <button class="ans"></button>
-                <button class="ans"></button>
+                <button class="html-ans" onclick="htmlOption(this)"></button>
+                <button class="html-ans" onclick="htmlOption(this)"></button>
+                <button class="html-ans" onclick="htmlOption(this)"></button>
+                <button class="html-ans" onclick="htmlOption(this)"></button>
             </div>
 
             <div class="quiz-button">
@@ -84,6 +84,7 @@
         <!-- For HTML -->
 
         <!-- For CSS -->
+
         <div class="quiz-card">
             <div class="quiz-top">
                 <i class="fab fa-css3-alt"></i>
@@ -92,12 +93,65 @@
                 <h2>CSS</h2>
             </div>
             <div class="quiz-bottom">
-                <button>Start Quiz</button>
+                <button onclick="startCssQuiz()">Start Quiz</button>
             </div>
         </div>
+
+        <!-- For CSS Quiz modal -->
+
+        <div class="quiz-modal" id="css-quiz-modal">
+
+            <span onclick="closeCssQuiz()">X</span>
+
+            <div class="quiz-modal-heading">
+                <h2>CSS Quiz</h2>
+            </div>
+
+            <div class="quiz-question">
+                <h5 id="css-question"></h5>
+            </div>
+
+            <div class="quiz-options">
+                <button class="css-ans" onclick="cssOption(this)"></button>
+                <button class="css-ans" onclick="cssOption(this)"></button>
+                <button class="css-ans" onclick="cssOption(this)"></button>
+                <button class="css-ans" onclick="cssOption(this)"></button>
+            </div>
+
+            <div class="quiz-button">
+                <button onclick="cssNext()">Next</button>
+            </div>
+
+        </div>
+
+        <!-- For CSS Quiz Score -->
+
+        <div class="quiz-score-container" id="css-quiz-score">
+            <span onclick="cssScoreClose()" class="score-close">X</span>
+            <div class="quiz-score-heading">
+                <h2>CSS Quiz Score</h2>
+            </div>
+            <div class="quiz-score-content">
+                <p>Congrajulation your score is</p>
+                <p><strong><span id="css-score"></span></strong> / <strong>10</strong></p>
+            </div>
+        </div>
+
+
+        <!-- For CSS Quiz Score -->
+
+        <!-- For Quiz Score overlay -->
+
+        <div class="quiz-score-overlay"></div>
+
+        <!-- For Quiz Score overlay -->
+
+        <!-- For CSS Quiz modal -->
+
         <!-- For CSS -->
 
         <!-- For JS -->
+
         <div class="quiz-card">
             <div class="quiz-top">
                 <i class="fab fa-js"></i>
@@ -106,9 +160,61 @@
                 <h2>JavaScript</h2>
             </div>
             <div class="quiz-bottom">
-                <button>Start Quiz</button>
+                <button onclick="startJSQuiz()">Start Quiz</button>
             </div>
         </div>
+
+        <!-- For JS Quiz modal -->
+
+        <div class="quiz-modal" id="js-quiz-modal">
+
+            <span onclick="closeJSQuiz()">X</span>
+
+            <div class="quiz-modal-heading">
+                <h2>JS Quiz</h2>
+            </div>
+
+            <div class="quiz-question">
+                <h5 id="js-question"></h5>
+            </div>
+
+            <div class="quiz-options">
+                <button class="js-ans" onclick="jsOption(this)"></button>
+                <button class="js-ans" onclick="jsOption(this)"></button>
+                <button class="js-ans" onclick="jsOption(this)"></button>
+                <button class="js-ans" onclick="jsOption(this)"></button>
+            </div>
+
+            <div class="quiz-button">
+                <button onclick="jsNext()">Next</button>
+            </div>
+
+        </div>
+
+        <!-- For CSS Quiz Score -->
+
+        <div class="quiz-score-container" id="js-quiz-score">
+            <span onclick="jsScoreClose()" class="score-close">X</span>
+            <div class="quiz-score-heading">
+                <h2>JS Quiz Score</h2>
+            </div>
+            <div class="quiz-score-content">
+                <p>Congrajulation your score is</p>
+                <p><strong><span id="js-score"></span></strong> / <strong>10</strong></p>
+            </div>
+        </div>
+
+
+        <!-- For JS Quiz Score -->
+
+        <!-- For Quiz Score overlay -->
+
+        <div class="quiz-score-overlay"></div>
+
+        <!-- For Quiz Score overlay -->
+
+        <!-- For JS Quiz modal -->
+
         <!-- For JS -->
 
         <!-- For Bootstrap -->
@@ -120,9 +226,61 @@
                 <h2>Bootstrap</h2>
             </div>
             <div class="quiz-bottom">
-                <button>Start Quiz</button>
+                <button onclick="startBootstrapQuiz()">Start Quiz</button>
             </div>
         </div>
+
+        <!-- For Bootstrap Quiz modal -->
+
+        <div class="quiz-modal" id="bootstrap-quiz-modal">
+
+            <span onclick="closeBootstrapQuiz()">X</span>
+
+            <div class="quiz-modal-heading">
+                <h2>Bootstrap Quiz</h2>
+            </div>
+
+            <div class="quiz-question">
+                <h5 id="bootstrap-question"></h5>
+            </div>
+
+            <div class="quiz-options">
+                <button class="bootstrap-ans" onclick="bootstrapOption(this)"></button>
+                <button class="bootstrap-ans" onclick="bootstrapOption(this)"></button>
+                <button class="bootstrap-ans" onclick="bootstrapOption(this)"></button>
+                <button class="bootstrap-ans" onclick="bootstrapOption(this)"></button>
+            </div>
+
+            <div class="quiz-button">
+                <button onclick="bootstrapNext()">Next</button>
+            </div>
+
+        </div>
+
+        <!-- For bootstrap Quiz Score -->
+
+        <div class="quiz-score-container" id="bootstrap-quiz-score">
+            <span onclick="bootstrapScoreClose()" class="score-close">X</span>
+            <div class="quiz-score-heading">
+                <h2>Bootstrap Quiz Score</h2>
+            </div>
+            <div class="quiz-score-content">
+                <p>Congrajulation your score is</p>
+                <p><strong><span id="bootstrap-score"></span></strong> / <strong>10</strong></p>
+            </div>
+        </div>
+
+
+        <!-- For Bootstrap Quiz Score -->
+
+        <!-- For Quiz Score overlay -->
+
+        <div class="quiz-score-overlay"></div>
+
+        <!-- For Quiz Score overlay -->
+
+        <!-- For Bootstrap Quiz modal -->
+
         <!-- For Bootstrap -->
     </div>
 

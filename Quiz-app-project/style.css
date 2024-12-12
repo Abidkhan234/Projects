@@ -104,15 +104,16 @@ body {
     border-radius: 5px;
 }
 
-.quiz-options button:hover {
-    background-color: black;
+.quiz-options button.correct {
+    background-color: green;
     color: white;
 }
 
-.quiz-options button.active {
-    background-color: black;
+.quiz-options button.incorrect {
+    background-color: red;
     color: white;
 }
+
 
 .quiz-button {
     text-align: center;
