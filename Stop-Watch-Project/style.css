@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Poppins:wght@400;500;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Sora:wght@100..800&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.stopWatch-container {
+    width: 100%;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    text-align: center;
+    background-color: white;
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow:0 0 10px black inset;
+}
+
+.stopWatch-container .timer h4{
+    font-size:30px;
+}
+
+.stopWatch-container .stopWatch-btn{
+    display: flex;
+    justify-content: center;
+}
+
+.stopWatch-container .stopWatch-btn button{
+    width: 80px;
+    height: 40px;
+    border: none;
+    outline: none;
+    background-color: blue;
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+    border-radius: 5px;
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+.stopWatch-container .stopWatch-btn #stop{
+    background-color: red;
+    display: none;
+}
+
+.stopWatch-container .stopWatch-btn #start{
+    background-color: green;
+}
