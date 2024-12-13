@@ -51,6 +51,10 @@ body {
     cursor: pointer;
 }
 
+.stopWatch-container .stopWatch-btn button i{
+    font-size: 20px;
+}
+
 .stopWatch-container .stopWatch-btn #stop{
     background-color: red;
     display: none;
